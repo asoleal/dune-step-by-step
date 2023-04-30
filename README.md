@@ -42,4 +42,8 @@ en la carpeta **/src**, el archivo debe aparecer en otro color.
 
 * En éste aso será el archivo **prueba**, que se ejecuta como ./prueba
 
-
+<div>
+<p style = 'text-align:center;'>
+<img src=https://github.com/asoleal/dune-step-by-step/blob/main/ejecutable.png >
+</p>
+</div>
