@@ -17,6 +17,13 @@ Se presentan los primeros pasos para iniciar en Dune
 ```
 cmake -S prueba/ -B build
 ```
+<div>
+<p style = 'text-align:center;'>
+<img src="https://github.com/asoleal/dune-step-by-step/blob/main/cmake.png" >
+</p>
+</div>
+
+
 * Una vez creada la carpeta **build**, accedemos a ella por medio de cd build
 * Estando dentro de la carpeta, escribimos el comando:
 ````
