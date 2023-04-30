@@ -37,7 +37,9 @@ make
 
 * Con éste comando iniciará la compilación
 
-* Una vez compilado, se busca en el archivo ejecutable, generalmente está 
-en la carpeta /src, el archivo debe aparecer en otro color.
+* Una vez compilado, se busca en la carpeta **/build** el archivo ejecutable, generalmente está 
+en la carpeta **/src**, el archivo debe aparecer en otro color.
 
 * En éste aso será el archivo **prueba**, que se ejecuta como ./prueba
+
+
