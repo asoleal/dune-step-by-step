@@ -8,7 +8,7 @@ Se presentan los primeros pasos para iniciar en Dune
 * Se llenan todos los espacios y esperamos a que se cree la carpeta **prueba**
 * Para compilar se ejecuta la siguiente instrucción
 ```
-cmake -S prueba -B build
+cmake -S prueba/ -B build
 ```
 * Una vez creada la carpeta **build**, accedemos a ella por medio de cd build
 * Estando dentro de la carpeta, escribimos el comando:
