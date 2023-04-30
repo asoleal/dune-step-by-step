@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+# SPDX-FileCopyrightInfo: Copyright (C) DUNE Project contributors, see file LICENSE.md in module root
+# SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception
+
+
+if [ -f "/home/jjlg/Github/dune-step-by-step/build/dune-env/bin/activate" ]; then
+  source /home/jjlg/Github/dune-step-by-step/build/dune-env/bin/activate
+else
+  echo "Dune internal virtual environment not found:"
+  echo "No activate script in /home/jjlg/Github/dune-step-by-step/build/dune-env/bin"
+  exit 77
+fi
+
+# test if build directory matches installed dune python packages
+python -m dune checkbuilddirs prueba /home/jjlg/Github/dune-step-by-step/build
+if [ $? -eq 0 ] ; then
+  "$@"
+else
+  echo "Dune python package could not be found."
+  exit 77
+fi

@@ -1,0 +1,1101 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.2.13-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/3.26.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Lm4jvz"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Lm4jvz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Lm4jvz
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_17f74/fast && /usr/bin/make  -f CMakeFiles/cmTC_17f74.dir/build.make CMakeFiles/cmTC_17f74.dir/build
+        make[1]: Entering directory '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Lm4jvz'
+        Building CXX object CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.2.1 20230201 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_17f74.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_17f74.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccy2NYGc.s
+        GNU C++17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.2.1 20230201, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.2.1 20230201, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: ab2adc4aa87e9c5b6e6cb24c55e663d5
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_17f74.dir/'
+         as -v --64 -o CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccy2NYGc.s
+        GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_17f74
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17f74.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_17f74 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.2.1 20230201 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_17f74' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_17f74.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4cnYzp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_17f74 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_17f74' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_17f74.'
+        make[1]: Leaving directory '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Lm4jvz'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1] ==> [/usr/include/c++/12.2.1]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/12.2.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1/backward] ==> [/usr/include/c++/12.2.1/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/12.2.1;/usr/include/c++/12.2.1/x86_64-pc-linux-gnu;/usr/include/c++/12.2.1/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Lm4jvz]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_17f74/fast && /usr/bin/make  -f CMakeFiles/cmTC_17f74.dir/build.make CMakeFiles/cmTC_17f74.dir/build]
+        ignore line: [make[1]: Entering directory '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Lm4jvz']
+        ignore line: [Building CXX object CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=c c++ ada fortran go lto objc obj-c++ d --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.2.1 20230201 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_17f74.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_17f74.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccy2NYGc.s]
+        ignore line: [GNU C++17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.2.1 20230201  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../include/c++/12.2.1/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.2.1 20230201  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: ab2adc4aa87e9c5b6e6cb24c55e663d5]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_17f74.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccy2NYGc.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_17f74]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17f74.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_17f74 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=c c++ ada fortran go lto objc obj-c++ d --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.2.1 20230201 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_17f74' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_17f74.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4cnYzp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_17f74 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc4cnYzp.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_17f74] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../..]
+          arg [CMakeFiles/cmTC_17f74.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/usr/share/dune/cmake/modules/DuneMacros.cmake:31 (enable_language)"
+      - "CMakeLists.txt:16 (include)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/3.26.3/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/dune/cmake/modules/DuneMacros.cmake:31 (enable_language)"
+      - "CMakeLists.txt:16 (include)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2jn4Tc"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2jn4Tc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2jn4Tc
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_67a18/fast && /usr/bin/make  -f CMakeFiles/cmTC_67a18.dir/build.make CMakeFiles/cmTC_67a18.dir/build
+        make[1]: Entering directory '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2jn4Tc'
+        Building C object CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.2.1 20230201 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67a18.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_67a18.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccmR8yC4.s
+        GNU C17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.2.1 20230201, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.2.1 20230201, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 99df1fbb4c4d7eeb8d93f0979bfab9ce
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67a18.dir/'
+         as -v --64 -o CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o /tmp/ccmR8yC4.s
+        GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_67a18
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67a18.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o -o cmTC_67a18 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++,d --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.2.1 20230201 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_67a18' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_67a18.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cckZFwvV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_67a18 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_67a18' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_67a18.'
+        make[1]: Leaving directory '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2jn4Tc'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/dune/cmake/modules/DuneMacros.cmake:31 (enable_language)"
+      - "CMakeLists.txt:16 (include)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/dune/cmake/modules/DuneMacros.cmake:31 (enable_language)"
+      - "CMakeLists.txt:16 (include)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2jn4Tc]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_67a18/fast && /usr/bin/make  -f CMakeFiles/cmTC_67a18.dir/build.make CMakeFiles/cmTC_67a18.dir/build]
+        ignore line: [make[1]: Entering directory '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2jn4Tc']
+        ignore line: [Building C object CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=c c++ ada fortran go lto objc obj-c++ d --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.2.1 20230201 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67a18.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_67a18.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccmR8yC4.s]
+        ignore line: [GNU C17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.2.1 20230201  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 12.2.1 20230201 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.2.1 20230201  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 99df1fbb4c4d7eeb8d93f0979bfab9ce]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67a18.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o /tmp/ccmR8yC4.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_67a18]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67a18.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o -o cmTC_67a18 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=c c++ ada fortran go lto objc obj-c++ d --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.2.1 20230201 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_67a18' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_67a18.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cckZFwvV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_67a18 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../.. CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cckZFwvV.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_67a18] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../..]
+          arg [CMakeFiles/cmTC_67a18.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/usr/share/dune/cmake/modules/CheckCXXFeatures.cmake:129 (check_cxx_compiler_flag)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:105 (include)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Performing Test cxx_std_flag_17"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-BLSA8H"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-BLSA8H"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "cxx_std_flag_17"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-BLSA8H
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5d840/fast && /usr/bin/make  -f CMakeFiles/cmTC_5d840.dir/build.make CMakeFiles/cmTC_5d840.dir/build
+        make[1]: Entering directory '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-BLSA8H'
+        Building CXX object CMakeFiles/cmTC_5d840.dir/src.cxx.o
+        /usr/bin/c++ -Dcxx_std_flag_17  -fPIE   -std=c++17 -o CMakeFiles/cmTC_5d840.dir/src.cxx.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-BLSA8H/src.cxx
+        Linking CXX executable cmTC_5d840
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d840.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_5d840.dir/src.cxx.o -o cmTC_5d840 
+        make[1]: Leaving directory '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-BLSA8H'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/share/dune/cmake/modules/CheckCXXFeatures.cmake:146 (check_cxx_source_compiles)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:105 (include)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Performing Test compiler_supports_cxx17"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-IoDWXd"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-IoDWXd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "compiler_supports_cxx17"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-IoDWXd
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7ca71/fast && /usr/bin/make  -f CMakeFiles/cmTC_7ca71.dir/build.make CMakeFiles/cmTC_7ca71.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-IoDWXd'
+        Building CXX object CMakeFiles/cmTC_7ca71.dir/src.cxx.o
+        /usr/bin/c++ -Dcompiler_supports_cxx17  -std=c++17 -fPIE -o CMakeFiles/cmTC_7ca71.dir/src.cxx.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-IoDWXd/src.cxx
+        Linking CXX executable cmTC_7ca71
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ca71.dir/link.txt --verbose=1
+        /usr/bin/c++   -std=c++17 CMakeFiles/cmTC_7ca71.dir/src.cxx.o -o cmTC_7ca71 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-IoDWXd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSymbolExists.cmake:77 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/dune/cmake/modules/CheckCXXFeatures.cmake:197 (check_cxx_symbol_exists)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:105 (include)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Looking for std::experimental::make_array<int,int>"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-l7u9VW"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-l7u9VW"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-std=c++17 "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "DUNE_HAVE_CXX_EXPERIMENTAL_MAKE_ARRAY"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-l7u9VW
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c5ec3/fast && /usr/bin/make  -f CMakeFiles/cmTC_c5ec3.dir/build.make CMakeFiles/cmTC_c5ec3.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-l7u9VW'
+        Building CXX object CMakeFiles/cmTC_c5ec3.dir/CheckSymbolExists.cxx.o
+        /usr/bin/c++   -std=c++17   -fPIE -o CMakeFiles/cmTC_c5ec3.dir/CheckSymbolExists.cxx.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-l7u9VW/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_c5ec3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5ec3.dir/link.txt --verbose=1
+        /usr/bin/c++ -std=c++17   CMakeFiles/cmTC_c5ec3.dir/CheckSymbolExists.cxx.o -o cmTC_c5ec3 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-l7u9VW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSymbolExists.cmake:77 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/dune/cmake/modules/CheckCXXFeatures.cmake:203 (check_cxx_symbol_exists)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:105 (include)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Looking for std::move<std::experimental::detected_t<std::decay_t,int>>"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Xe8TPz"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Xe8TPz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-std=c++17 "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "DUNE_HAVE_CXX_EXPERIMENTAL_IS_DETECTED"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Xe8TPz
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a5295/fast && /usr/bin/make  -f CMakeFiles/cmTC_a5295.dir/build.make CMakeFiles/cmTC_a5295.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Xe8TPz'
+        Building CXX object CMakeFiles/cmTC_a5295.dir/CheckSymbolExists.cxx.o
+        /usr/bin/c++   -std=c++17   -fPIE -o CMakeFiles/cmTC_a5295.dir/CheckSymbolExists.cxx.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Xe8TPz/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_a5295
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5295.dir/link.txt --verbose=1
+        /usr/bin/c++ -std=c++17   CMakeFiles/cmTC_a5295.dir/CheckSymbolExists.cxx.o -o cmTC_a5295 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-Xe8TPz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSymbolExists.cmake:77 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/dune/cmake/modules/CheckCXXFeatures.cmake:209 (check_cxx_symbol_exists)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:105 (include)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Looking for std::identity"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RdPEFg"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RdPEFg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-std=c++17 "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "DUNE_HAVE_CXX_STD_IDENTITY"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RdPEFg
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b3d2f/fast && /usr/bin/make  -f CMakeFiles/cmTC_b3d2f.dir/build.make CMakeFiles/cmTC_b3d2f.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RdPEFg'
+        Building CXX object CMakeFiles/cmTC_b3d2f.dir/CheckSymbolExists.cxx.o
+        /usr/bin/c++   -std=c++17   -fPIE -o CMakeFiles/cmTC_b3d2f.dir/CheckSymbolExists.cxx.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RdPEFg/CheckSymbolExists.cxx
+        /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RdPEFg/CheckSymbolExists.cxx: En la función ‘int main(int, char**)’:
+        /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RdPEFg/CheckSymbolExists.cxx:7:24: error: ‘identity’ no es un miembro de ‘std’
+            7 |   return ((int*)(&std::identity))[argc];
+              |                        ^~~~~~~~
+        make[1]: *** [CMakeFiles/cmTC_b3d2f.dir/build.make:78: CMakeFiles/cmTC_b3d2f.dir/CheckSymbolExists.cxx.o] Error 1
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RdPEFg'
+        make: *** [Makefile:127: cmTC_b3d2f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/share/dune/cmake/modules/CheckCXXFeatures.cmake:216 (check_cxx_source_compiles)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:105 (include)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Performing Test DUNE_HAVE_CXX_UNEVALUATED_CONTEXT_LAMBDA"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-S8Uypo"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-S8Uypo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-std=c++17 "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "DUNE_HAVE_CXX_UNEVALUATED_CONTEXT_LAMBDA"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-S8Uypo
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_95da1/fast && /usr/bin/make  -f CMakeFiles/cmTC_95da1.dir/build.make CMakeFiles/cmTC_95da1.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-S8Uypo'
+        Building CXX object CMakeFiles/cmTC_95da1.dir/src.cxx.o
+        /usr/bin/c++ -DDUNE_HAVE_CXX_UNEVALUATED_CONTEXT_LAMBDA  -std=c++17   -fPIE -o CMakeFiles/cmTC_95da1.dir/src.cxx.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-S8Uypo/src.cxx
+        /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-S8Uypo/src.cxx:1:20: error: lambda-expression in unevaluated context only available with ‘-std=c++20’ or ‘-std=gnu++20’
+            1 | using F = decltype([](){}); int main() {return 0;}
+              |                    ^
+        make[1]: *** [CMakeFiles/cmTC_95da1.dir/build.make:78: CMakeFiles/cmTC_95da1.dir/src.cxx.o] Error 1
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-S8Uypo'
+        make: *** [Makefile:127: cmTC_95da1/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/usr/share/cmake/Modules/FindBLAS.cmake:367 (check_function_exists)"
+      - "/usr/share/cmake/Modules/FindBLAS.cmake:411 (check_blas_libraries)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "/usr/share/dune/cmake/modules/DuneCommonMacros.cmake:11 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneModuleDependencies.cmake:112 (include)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:123 (dune_process_dependency_macros)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Looking for sgemm_"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RlFNwV"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RlFNwV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RlFNwV
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_45fa1/fast && /usr/bin/make  -f CMakeFiles/cmTC_45fa1.dir/build.make CMakeFiles/cmTC_45fa1.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RlFNwV'
+        Building C object CMakeFiles/cmTC_45fa1.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -fPIE -o CMakeFiles/cmTC_45fa1.dir/CheckFunctionExists.c.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RlFNwV/CheckFunctionExists.c
+        Linking C executable cmTC_45fa1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45fa1.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_45fa1.dir/CheckFunctionExists.c.o -o cmTC_45fa1 
+        /usr/bin/ld: CMakeFiles/cmTC_45fa1.dir/CheckFunctionExists.c.o: en la función `main':
+        CheckFunctionExists.c:(.text+0x10): referencia a `sgemm_' sin definir
+        collect2: error: ld devolvió el estado de salida 1
+        make[1]: *** [CMakeFiles/cmTC_45fa1.dir/build.make:99: cmTC_45fa1] Error 1
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-RlFNwV'
+        make: *** [Makefile:127: cmTC_45fa1/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake/Modules/FindBLAS.cmake:463 (find_package)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "/usr/share/dune/cmake/modules/DuneCommonMacros.cmake:11 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneModuleDependencies.cmake:112 (include)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:123 (dune_process_dependency_macros)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aMIln6"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aMIln6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aMIln6
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f07d1/fast && /usr/bin/make  -f CMakeFiles/cmTC_f07d1.dir/build.make CMakeFiles/cmTC_f07d1.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aMIln6'
+        Building C object CMakeFiles/cmTC_f07d1.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_f07d1.dir/src.c.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aMIln6/src.c
+        Linking C executable cmTC_f07d1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f07d1.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f07d1.dir/src.c.o -o cmTC_f07d1 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aMIln6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/usr/share/cmake/Modules/FindBLAS.cmake:367 (check_function_exists)"
+      - "/usr/share/cmake/Modules/FindBLAS.cmake:1281 (check_blas_libraries)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "/usr/share/dune/cmake/modules/DuneCommonMacros.cmake:11 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneModuleDependencies.cmake:112 (include)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:123 (dune_process_dependency_macros)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Looking for sgemm_"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2V0Ypc"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2V0Ypc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "BLAS_blas_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2V0Ypc
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6f855/fast && /usr/bin/make  -f CMakeFiles/cmTC_6f855.dir/build.make CMakeFiles/cmTC_6f855.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2V0Ypc'
+        Building C object CMakeFiles/cmTC_6f855.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -fPIE -o CMakeFiles/cmTC_6f855.dir/CheckFunctionExists.c.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2V0Ypc/CheckFunctionExists.c
+        Linking C executable cmTC_6f855
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f855.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_6f855.dir/CheckFunctionExists.c.o -o cmTC_6f855  /usr/lib/libblas.so 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-2V0Ypc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:220 (check_function_exists)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:395 (check_lapack_libraries)"
+      - "/usr/share/dune/cmake/modules/DuneCommonMacros.cmake:11 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneModuleDependencies.cmake:112 (include)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:123 (dune_process_dependency_macros)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Looking for cheev_"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-wlTvz7"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-wlTvz7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "LAPACK_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-wlTvz7
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0e1bc/fast && /usr/bin/make  -f CMakeFiles/cmTC_0e1bc.dir/build.make CMakeFiles/cmTC_0e1bc.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-wlTvz7'
+        Building C object CMakeFiles/cmTC_0e1bc.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -fPIE -o CMakeFiles/cmTC_0e1bc.dir/CheckFunctionExists.c.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-wlTvz7/CheckFunctionExists.c
+        Linking C executable cmTC_0e1bc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e1bc.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_0e1bc.dir/CheckFunctionExists.c.o -o cmTC_0e1bc  /usr/lib/libblas.so -lm -ldl 
+        /usr/bin/ld: CMakeFiles/cmTC_0e1bc.dir/CheckFunctionExists.c.o: en la función `main':
+        CheckFunctionExists.c:(.text+0x10): referencia a `cheev_' sin definir
+        collect2: error: ld devolvió el estado de salida 1
+        make[1]: *** [CMakeFiles/cmTC_0e1bc.dir/build.make:100: cmTC_0e1bc] Error 1
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-wlTvz7'
+        make: *** [Makefile:127: cmTC_0e1bc/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:220 (check_function_exists)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:681 (check_lapack_libraries)"
+      - "/usr/share/dune/cmake/modules/DuneCommonMacros.cmake:11 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneModuleDependencies.cmake:112 (include)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:123 (dune_process_dependency_macros)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Looking for cheev_"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-cPj7Cw"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-cPj7Cw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "LAPACK_lapack_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-cPj7Cw
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_31265/fast && /usr/bin/make  -f CMakeFiles/cmTC_31265.dir/build.make CMakeFiles/cmTC_31265.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-cPj7Cw'
+        Building C object CMakeFiles/cmTC_31265.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -fPIE -o CMakeFiles/cmTC_31265.dir/CheckFunctionExists.c.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-cPj7Cw/CheckFunctionExists.c
+        Linking C executable cmTC_31265
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31265.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_31265.dir/CheckFunctionExists.c.o -o cmTC_31265  /usr/lib/liblapack.so /usr/lib/libblas.so 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-cPj7Cw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/usr/share/dune/cmake/modules/AddBLASLapackFlags.cmake:34 (check_function_exists)"
+      - "/usr/share/dune/cmake/modules/DuneCommonMacros.cmake:12 (include)"
+      - "/usr/share/dune/cmake/modules/DuneModuleDependencies.cmake:112 (include)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:123 (dune_process_dependency_macros)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Looking for dsyev_"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-nnhOwX"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-nnhOwX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "LAPACK_NEEDS_UNDERLINE"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-nnhOwX
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8f324/fast && /usr/bin/make  -f CMakeFiles/cmTC_8f324.dir/build.make CMakeFiles/cmTC_8f324.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-nnhOwX'
+        Building C object CMakeFiles/cmTC_8f324.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dsyev_ -fPIE -o CMakeFiles/cmTC_8f324.dir/CheckFunctionExists.c.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-nnhOwX/CheckFunctionExists.c
+        Linking C executable cmTC_8f324
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f324.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=dsyev_ CMakeFiles/cmTC_8f324.dir/CheckFunctionExists.c.o -o cmTC_8f324  /usr/lib/liblapack.so /usr/lib/libblas.so 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-nnhOwX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/share/dune/cmake/modules/FindQuadMath.cmake:46 (check_cxx_source_compiles)"
+      - "/usr/share/dune/cmake/modules/DuneCommonMacros.cmake:16 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneModuleDependencies.cmake:112 (include)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:123 (dune_process_dependency_macros)"
+      - "CMakeLists.txt:19 (dune_project)"
+    checks:
+      - "Performing Test QuadMath_COMPILES"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-JmawnR"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-JmawnR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-std=c++17 "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "QuadMath_COMPILES"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-JmawnR
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_624c4/fast && /usr/bin/make  -f CMakeFiles/cmTC_624c4.dir/build.make CMakeFiles/cmTC_624c4.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-JmawnR'
+        Building CXX object CMakeFiles/cmTC_624c4.dir/src.cxx.o
+        /usr/bin/c++ -DQuadMath_COMPILES  -std=c++17  -fext-numeric-literals -fPIE -o CMakeFiles/cmTC_624c4.dir/src.cxx.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-JmawnR/src.cxx
+        Linking CXX executable cmTC_624c4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_624c4.dir/link.txt --verbose=1
+        /usr/bin/c++ -std=c++17  -fext-numeric-literals CMakeFiles/cmTC_624c4.dir/src.cxx.o -o cmTC_624c4  -lquadmath 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-JmawnR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/share/dune/cmake/modules/DuneCommonMacros.cmake:28 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneModuleDependencies.cmake:112 (include)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:123 (dune_process_dependency_macros)"
+      - "CMakeLists.txt:19 (dune_project)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-1xNDza"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-1xNDza"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-1xNDza
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_03ed4/fast && /usr/bin/make  -f CMakeFiles/cmTC_03ed4.dir/build.make CMakeFiles/cmTC_03ed4.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-1xNDza'
+        Building C object CMakeFiles/cmTC_03ed4.dir/test_mpi.c.o
+        /usr/bin/cc   -fPIE -o CMakeFiles/cmTC_03ed4.dir/test_mpi.c.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-1xNDza/test_mpi.c
+        Linking C executable cmTC_03ed4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03ed4.dir/link.txt --verbose=1
+        /usr/bin/cc -Wl,-rpath -Wl,/usr/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_03ed4.dir/test_mpi.c.o -o cmTC_03ed4  /usr/lib/libmpi.so 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-1xNDza'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/share/dune/cmake/modules/FindPTScotch.cmake:83 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneCommonMacros.cmake:36 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneModuleDependencies.cmake:112 (include)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:123 (dune_process_dependency_macros)"
+      - "CMakeLists.txt:19 (dune_project)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-4qHN1t"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-4qHN1t"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-std=c++17 "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-4qHN1t
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d5fde/fast && /usr/bin/make  -f CMakeFiles/cmTC_d5fde.dir/build.make CMakeFiles/cmTC_d5fde.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-4qHN1t'
+        Building CXX object CMakeFiles/cmTC_d5fde.dir/test_mpi.cpp.o
+        /usr/bin/c++   -std=c++17   -fPIE -o CMakeFiles/cmTC_d5fde.dir/test_mpi.cpp.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-4qHN1t/test_mpi.cpp
+        Linking CXX executable cmTC_d5fde
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5fde.dir/link.txt --verbose=1
+        /usr/bin/c++ -std=c++17   -Wl,-rpath -Wl,/usr/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_d5fde.dir/test_mpi.cpp.o -o cmTC_d5fde  /usr/lib/libmpi_cxx.so /usr/lib/libmpi.so 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-4qHN1t'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "/usr/share/dune/cmake/modules/FindPTScotch.cmake:83 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneCommonMacros.cmake:36 (find_package)"
+      - "/usr/share/dune/cmake/modules/DuneModuleDependencies.cmake:112 (include)"
+      - "/usr/share/dune/cmake/modules/DuneProject.cmake:123 (dune_process_dependency_macros)"
+      - "CMakeLists.txt:19 (dune_project)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aIxgjn"
+      binary: "/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aIxgjn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-std=c++17 "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jjlg/Github/dune-step-by-step/prueba/cmake/modules;/usr/share/dune/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aIxgjn
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_846e4/fast && /usr/bin/make  -f CMakeFiles/cmTC_846e4.dir/build.make CMakeFiles/cmTC_846e4.dir/build
+        make[1]: se entra en el directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aIxgjn'
+        Building CXX object CMakeFiles/cmTC_846e4.dir/test_mpi.cpp.o
+        /usr/bin/c++   -std=c++17   -fPIE -o CMakeFiles/cmTC_846e4.dir/test_mpi.cpp.o -c /home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aIxgjn/test_mpi.cpp
+        Linking CXX executable cmTC_846e4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_846e4.dir/link.txt --verbose=1
+        /usr/bin/c++ -std=c++17   -Wl,-rpath -Wl,/usr/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_846e4.dir/test_mpi.cpp.o -o cmTC_846e4  /usr/lib/libmpi_cxx.so /usr/lib/libmpi.so 
+        make[1]: se sale del directorio '/home/jjlg/Github/dune-step-by-step/build/CMakeFiles/CMakeScratch/TryCompile-aIxgjn'
+        
+      exitCode: 0
+...

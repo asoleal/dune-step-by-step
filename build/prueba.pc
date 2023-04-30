@@ -1,0 +1,15 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+CXX=/usr/bin/c++ 
+CC=/usr/bin/cc
+DEPENDENCIES=
+
+Name: prueba
+Version: 01
+Description: prueba module
+URL: http://dune-project.org/
+Requires: dune-common
+Libs: -L${libdir}
+Cflags: -I${includedir}
