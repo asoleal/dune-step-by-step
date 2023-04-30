@@ -34,7 +34,10 @@ make
 <img src="https://github.com/asoleal/dune-step-by-step/blob/main/make.png" >
 </p>
 </div>
+
 * Con éste comando iniciará la compilación
+
 * Una vez compilado, se busca en el archivo ejecutable, generalmente está 
 en la carpeta /src, el archivo debe aparecer en otro color.
+
 * En éste aso será el archivo **prueba**, que se ejecuta como ./prueba
