@@ -5,6 +5,12 @@ Se presentan los primeros pasos para iniciar en Dune
 * Escriba **duneproject** en la consola
 
 
+<div>
+<p style = 'text-align:center;'>
+<img src="https://github.com/asoleal/dune-step-by-step/blob/main/creacion.png" >
+</p>
+</div>
+
 * Se pone el nombre del proyecto, en este caso **prueba**
 * Se llenan todos los espacios y esperamos a que se cree la carpeta **prueba**
 * Para compilar se ejecuta la siguiente instrucción
