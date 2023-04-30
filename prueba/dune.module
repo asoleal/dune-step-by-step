@@ -1,0 +1,12 @@
+################################
+# Dune module information file #
+################################
+
+# Name of the module
+Module: prueba
+Version: 01
+Maintainer: jlealgom@unal.edu.co
+# Required build dependencies
+Depends: dune-common
+# Optional build dependencies
+#Suggests:
