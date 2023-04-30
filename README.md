@@ -2,7 +2,8 @@
 
 Se presentan los primeros pasos para iniciar en Dune
 
-* **duneproject**
+* Escriba **duneproject** en la consola
+
 
 * Se pone el nombre del proyecto, en este caso **prueba**
 * Se llenan todos los espacios y esperamos a que se cree la carpeta **prueba**
